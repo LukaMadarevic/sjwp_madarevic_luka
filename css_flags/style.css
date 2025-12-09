@@ -1,0 +1,101 @@
+.zelena{
+    width: 500px;
+    height: 300px;
+    background-color: green;
+    position: relative;
+
+}
+
+.crvena2{
+
+    width: 166px;
+    height: 300px;
+    background-color: red;
+    position: absolute;
+    left: 166px;
+    z-index: 2;
+}
+
+.zuta2{
+    width: 167.5px;
+    height: 300px;
+
+    background-color: yellow;
+    position: absolute;
+    left: 166px;
+    z-index: 1;
+}
+.zvij{
+
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+);
+right: 200px;
+top: 100px;
+}
+
+.crveno {
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    position: relative; /* potrebno zbog apsolutnog pozicioniranja */
+}
+
+/* Veliki bijeli krug */
+.polumjesecb {
+  width: 120px;
+  height: 120px;
+  background: white;       
+  border-radius: 50%;
+  position: absolute;
+  left: 120px;
+  top: 90px;
+}
+
+/* Mali crveni krug koji "odsiječe" bijeli */
+.polumjesecc {
+  width: 100px;
+  height: 100px;
+  background: red;      
+  border-radius: 50%;
+  position: absolute;
+  left: 145px; 
+  top: 100px;
+}
+
+/* Zvijezda */
+.zvijezda {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+       
+    );
+   
+}
