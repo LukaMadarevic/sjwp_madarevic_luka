@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+}
+    div {
+        width: 300px;
+        height: 300px;
+    }
+    .box {
+        background-color: lightblue;
+        border: 5px solid black;
+        margin: 10px 20px 10px 20px;
+        /* margin: 10px 20px;  isto kao gore */
+        padding: 10px;
+        border-radius: 10px;
+        /* border-radius: 50%; */
+    }
+    .drugi {
+        background-color: coral;
+       border: 4px dashed black;
+       margin-top: 40px;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Box model</h1>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Totam ex laboriosam consectetur quam. Bl
+        anditiis impedit consectetur digniss
+        imos corporis ullam delectus quae ipsa iusto unde,
+         cupiditate libero natus quidem nobis eum!
+    </div>
+    <div class="drugi">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem et debitis harum repellendus nobis. 
+        Autem vitae numquam dignissimos iste aliquam, fugit amet nisi quasi accusamus ullam delectus quaerat necessitatibus saepe?
+        Expedita soluta laboriosam veritatis laudantium quo libero minima labore natus veniam, molestiae perferendis
+         ex fuga quae itaque voluptate, quasi, eos magni iure animi? Perspiciatis inventore tempora magnam minus quam atque!
+    </div>
+    <h2>Botswana    </h2>
+    <style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .flag {
+    width: 480px;
+    height: 320px;
+    background-color: #75aadb; /* svetloplava boja */
+    border: 8px solid #333; /* okvir zastave */
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  /* Crna traka sa belim ivicama */
+  .stripe {
+    position: absolute;
+    top: 45%; /* centriranje po visini */
+    width: 100%;
+    height: 10%; /* debljina crne trake */
+    background-color: black;
+    border-top: 10px solid white;  /* bela gornja ivica */
+    border-bottom: 10px solid white; /* bela donja ivica */
+  }
+</style>
+</head>
+<body>
+  <div class="flag">
+    <div class="stripe"></div>
+  </div>
+    
+</body>
+</html>
