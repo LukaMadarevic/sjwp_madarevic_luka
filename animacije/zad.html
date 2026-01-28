@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover animacija kartice</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .kartica {
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+
+        .kartica:hover {
+            transform: scale(1.1);
+            background-color: #cce7ff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kartica">
+        <h2>Hover kartica</h2>
+        <p>Prijeđi mišem preko kartice</p>
+    </div>
+
+</body>
+</html>
