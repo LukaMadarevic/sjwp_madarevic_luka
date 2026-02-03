@@ -3,218 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SJWP">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Luka Mađarević">
-    <title>Luka Mađarević</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
     <style>
-      .drugi{
-        color: green;
-      }
-     
+        .container{
+            background-color: dodgerblue;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center; /*pozicionranje po horizontalnoj osi*/
+            align-items: stretch; /*pozicionranje po vertikalnoj osi*/
+            /*ako je flex-direction_column onda se osi okrecu,justify content je vertikalan , a align items je horizontalna os*/
+            align-content: flex-start;
 
+        }
+        .container div{
+           background-color: #f1f1f1;
+           width: 100px;
+           margin: 10px;
+              padding: 10px;
+              text-align: center;
+              font-size: 30px;
+        }
     </style>
 </head>
 <body>
-  <h1>Zadaće</h1>
-  <ol>
-    <li><a href="./zadace/zadaca1.html">Zadaća</a></li>
-     <li><a href="./zadace/zadaca2.html">Zadaća</a></li>
-    <li>Zadaća</li>
-    <li>Zadaća</li>
-    <li>Zadaća</li>
-  </ol>
-  
-<h2>nacini dodavanja cssa</h2>
-<ul>
-  <li style="color:brown;">inline CSS</li>
-  <li class="drugi">internal CSS</li>
-  <li class="treci">external CSS</li>
-</ul>
-     <!-- paragraf -->
-      <!-- break element -->
-      <!--  hr element -->
-      <p>Lorem ipsum dolor sit, amet <br> <hr>consectetur adipisicing elit. Nesciunt ipsum veritatis veni
-        am, sit corporis in ad, quasi est libero dicta e
-        xpedita sed ut ratione quis minus modi! Nulla, facilis possimus?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quasi unde officiis
-             reiciendis harum totam exercitationem ut blanditiis assumenda. 
-            Dolorem fugit iure optio nulla iusto sunt, nam laborum temporibus quod?</p>
-            <h1>moj najbolji horor</h1>
-            <p>Conjuring</p>
-            <h2>moja najbolja komedija</h2>
-            <p>golfbrejker</p>
-            <h3>moja najbolja serija</h3>
-            <p>face</p>
-            <p>
-             <!--  b,strong , i  , em,pre,sub,sup,mark,del -->
-              mi smo <strong><b>3e razred</b></strong>. <sub>razrednik</sub><em>je <mark>benara</mark></em>. <sup>ima</sup> nas <del>26</del> u razredu.
-
-            </p>
-            <pre>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nobis ut officia temporibus, 
-              tempora consequuntur officiis atque ea eveniet laborum eligendi ad perferendis illum ratione at? Numquam vel perferendis tenetur?
-            </pre>
-            <!-- liste,ul-unordered list , ol-ordered list , dl-definition list -->
-             <h3>voćni desert u čaši</h3>
-             <h3 id="naslov">sastojci:</h3>
-             <ul>
-              <li>230 g kreme za kremšnite</li>
-              <li>500 ml hladnog mlijeka</li>
-              <li>3-4 žlice pekmeza od višanja</li>
-             </ul>
-             <h4>priprema:</h4>
-             <ol>
-              <li>
-Prah za kremu pomiješati sa pola litre hladnog mlijeka te miksati 2-3 minute dok se ne dobije jednolična krema. </li>
-              <li>
-Pekmez od višanja rastopiti na blagoj vatri i ohladiti.</li>
-              <li>
-U desertne čaše rasporediti sloj pripremljene kreme pa žlicu i pol voćnog nadjeva te ponoviti još jednom postupak i završiti sa voćnim slojem. Posipati nasjeckanim pistacijem i staviti u hladnjak na hlađenje. 
-
-</li>
-             </ol>
-             <h3>definition lista</h3>
-             <dl>
-              <dt>Struja</dt>
-              <dd>Usmjereno gibanje elektroa kroz vodič skibidi</dd>
-              <dt>napon</dt>
-              <dd>razlika potencijala izmedu dvije tocke</dd>
-             </dl>
-             <h3>nested lists</h3>
-              <ul>
-                <li>A</li>
-                <li>B</li>
-                <ol>
-                  <li>B1</li>
-                  <li>B2</li>
-                  <ol>
-                    <li>B2aa</li>
-                    <li>B2ab</li>
-                    <li></li>
-                  </ol>
-                  <li>B3</li>
-                </ol>
-                <li>C</li>
-              </ul>
-              <h2>anchor element </h2>
-              <p>stranicu skole mozete pogledati <a href="https://tssb.hr/"target="_blank">ovdje</a>.
-              </p>
-              <h2>mojih 5 websiteova</h2>
-           <ol>
-            <li><a href="https://gnkdinamo.hr/"target="_blank">dinamo</a></li>
-            <li><a href="https://discord.com/"target="_blank">dc</a></li>
-            <li><a href="https://www.instagram.com/"target="_blank">ig</a></li>
-            <li><a href=https://www.youtube.com/ " target="_blank" >yt</a></li>
-            <li><a href="https://lov-ribolov.hr/"target="_blank">lov i ribolov</a></li>
-           </ol>
-           <h2>slike i img element</h2>
-          <!--  slika s weba -->
-           <img src="https://storage.googleapis.com/takohr-media/2023/03/Kako-jesti-mango-480x480.jpg" alt="slika mango phonka"width="600", height="400">
-           <br>
-           <hr>
-           <p draggable="true">slika snaseg pcja</p>
-           <br>
-
-           <h2>slika kao ling</h2>
-           <a href="https://youtube.com"target="_blank"><img src="slike/ytlogo.png" alt="yt"></a>
-           <img src="./slike/fruits-exotic-mango-detail-2.webp" alt="slika mango phonk ">
-           <br>
-           <hr>
-           <p>slika iz repozitorija iz roota /slika </p>
-           <h2>Moj rodendan</h2>
-           <h3>5. Maj </h3>
-           <img src="https://i.pinimg.com/originals/3d/b9/ac/3db9ac7a5f90254aebf742ee31579062.jpg" alt="pozivnica "width="500">
-           <br>
-           <hr>
-           <h4>Sto ponijeti :</h4>
-            <ul>
-              <li>alkohol</li>
-              <li>cigare</li>
-              <li>pljuge</li>
-              <li>dobro raspolozenje</li>
-            </ul>
-            <a href="https://maps.app.goo.gl/juRicZTsYe2ATJ3N8">Ovdje treba doci</a>
-            <h5>veselim se vasem dolasku</h5>
-<h2>tablice u html</h2>
-<table border="1">
-  <tr>
-    <th colspan="2">ime prezime</th>
-    <th>link</th>
-    <th>razred</th>
-  </tr>
-    <tr>
-      <td>Petar</td>
-      <td>Basanovic</td>
-      <td>https://google.com</td>
-      <td rowspan="3">3.e</td>
-    </tr>
-    <tr>
-      <td>david</td>
-      <td>grgić</td>
-      <td>https://policija.hr</td>
-     
-    </tr>
-    <tr>
-       <td>Petar</td>
-      <td>Basanovic</td>
-      <td>https://google.com</td>
-    
-    </tr>
-
-</table>
-<h2>zad1</h2>
-<table border="1">
-  <tr>
-    <td>name</td>
-    <td>age</td>
-    <td>country</td>
-  </tr>
-  <tr>
-    <td>Harry Depp</td>
-    <td>28</td>
-    <td>Britan</td>
-  </tr>
-  <tr>
-    <td>John Smith</td>
-    <td>35</td>
-    <td>USA</td>
-  </tr>
-  <tr>
-    <td>Ram Krishna</td>
-    <td>29</td>
-    <td>Nepal</td>
-  </tr>
-
-</table>
-<h2>zad2</h2>
-<table border="1">
-  <tr>
-    <td>sn</td>
-    <td>item</td>
-    <td>quantity</td>
-    <td colspan="2">sn item</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Apple</td>
-    <td>2</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>mango</td>
-    <td>2</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>orange</td>
-    <td>1</td>
-    <td>5</td>
-  </tr>
-</table>
+    <h1>flexbox</h1>
+<div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div>
 
 </body>
 </html>

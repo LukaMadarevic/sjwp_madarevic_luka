@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Semafor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #eee;
+        }
+
+        .semafor {
+            background: #333;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .svjetlo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #555;
+            opacity: 0.3;
+            animation: upali 3s infinite;
+        }
+
+        .crveno {
+            background: red;
+            animation-delay: 0s;
+        }
+
+        .zuto {
+            background: yellow;
+            animation-delay: 1s;
+        }
+
+        .zeleno {
+            background: green;
+            animation-delay: 2s;
+        }
+
+        @keyframes upali {
+            0%   { opacity: 0.3; }
+            10%  { opacity: 1; }
+            33%  { opacity: 1; }
+            43%  { opacity: 0.3; }
+            100% { opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+    <div class="semafor">
+        <div class="svjetlo crveno"></div>
+        <div class="svjetlo zuto"></div>
+        <div class="svjetlo zeleno"></div>
+    </div>
+</body>
+</html>
