@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Galerija</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #020617, #0f172a);
+    color: white;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+.nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nav a {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #1e293b;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.nav a:hover {
+    background: crimson;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    background: #111827;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.08);
+}
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+.card p {
+    background: crimson;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+section {
+    display: none;
+}
+#filmovi:target,
+#serije:target,
+#dokumentarci:target {
+    display: block;
+}
+body:not(:has(:target)) #filmovi {
+    display: block;
+}
+</style>
+</head>
+<body>
+<h1>Galerija</h1>
+<div class="nav">
+    <a href="#filmovi">Filmovi</a>
+    <a href="#serije">Serije</a>
+    <a href="#dokumentarci">Dokumentarci</a>
+</div>
+<section id="filmovi">
+<div class="grid">
+<a href="https://www.imdb.com/title/tt0111161/" class="card"><img src="https://m.media-amazon.com/images/I/51NiGlapXlL.jpg"><p>Shawshank Redemption</p></a>
+<a href="https://www.imdb.com/title/tt0060196/" class="card"><img src="https://m.media-amazon.com/images/I/71HA2V6PaTL._AC_UY218_.jpg"><p>Good Bad Ugly</p></a>
+<a href="https://www.imdb.com/title/tt0108052/" class="card"><img src="https://m.media-amazon.com/images/I/817JZ842dlL._AC_UY218_.jpg"><p>Schindler List</p></a>
+<a href="https://www.imdb.com/title/tt0110912/" class="card"><img src="https://m.media-amazon.com/images/I/71Nhr2mGlYL._AC_UL320_.jpg"><p>Pulp Fiction</p></a>
+<a href="https://www.imdb.com/title/tt0167260/" class="card"><img src="https://m.media-amazon.com/images/I/51Qvs9i5a+L.jpg"><p>LOTR 3</p></a>
+<a href="https://www.imdb.com/title/tt0120737/" class="card"><img src="https://m.media-amazon.com/images/I/51Qvs9i5a+L.jpg"><p>LOTR 1</p></a>
+<a href="https://www.imdb.com/title/tt0080684/" class="card"><img src="https://m.media-amazon.com/images/I/819qoC2RCVL._AC_UL320_.jpg"><p>Star Wars</p></a>
+<a href="https://www.imdb.com/title/tt0137523/" class="card"><img src="https://m.media-amazon.com/images/I/51v5ZpFyaFL.jpg"><p>Fight Club</p></a>
+<a href="https://www.imdb.com/title/tt0099685/" class="card"><img src="https://m.media-amazon.com/images/I/81aXKqDpPfL._AC_UY218_.jpg"><p>Goodfellas</p></a>
+<a href="https://www.imdb.com/title/tt0073486/" class="card"><img src="https://m.media-amazon.com/images/I/91yb5At6fVL._AC_UY218_.jpg"><p>One Flew</p></a>
+<a href="https://www.imdb.com/title/tt0102926/" class="card"><img src="https://m.media-amazon.com/images/I/81W8ZcvrIkL._AC_UY218_.jpg"><p>The Silence of the Lambs</p></a>
+<a href="https://www.imdb.com/title/tt0120815/" class="card"><img src="https://m.media-amazon.com/images/I/71NvAIxHNOL._AC_UY218_.jpg"><p>Saving Private Ryan</p></a>
+<a href="https://www.imdb.com/title/tt0118799/" class="card"><img src="https://m.media-amazon.com/images/I/81AhWzAPFuL._AC_UY218_.jpg"><p>Life Is Beautiful</p></a>
+<a href="https://www.imdb.com/title/tt0816692/" class="card"><img src="https://m.media-amazon.com/images/I/91QqHuKHfTL._AC_UY218_.jpg"><p>Interstellar</p></a>
+<a href="https://www.imdb.com/title/tt0120689/" class="card"><img src="https://m.media-amazon.com/images/I/915E5b8McmL._AC_UY218_.jpg"><p>Green Mile</p></a>
+<a href="https://www.imdb.com/title/tt0245429/" class="card"><img src="https://m.media-amazon.com/images/I/81f4SIf5WZL._AC_UY218_.jpg"><p>Spirited Away</p></a>
+<a href="https://www.imdb.com/title/tt6751668/" class="card"><img src="https://m.media-amazon.com/images/I/81WvU7FIj-L._AC_UY218_.jpg"><p>Parasite</p></a>
+<a href="https://www.imdb.com/title/tt0109830/" class="card"><img src="https://m.media-amazon.com/images/I/81HSgjY4xiL._AC_UY218_.jpg"><p>Forrest Gump</p></a>
+<a href="https://www.imdb.com/title/tt0133093/" class="card"><img src="https://m.media-amazon.com/images/I/6189dAXymbL._AC_UY218_.jpg"><p>Matrix</p></a>
+<a href="https://www.imdb.com/title/tt1375666/" class="card"><img src="https://m.media-amazon.com/images/I/81BgHzYATnL._AC_UY218_.jpg"><p>Inception</p></a>
+</div>
+</section>
+<section id="serije">
+<div class="grid">
+<a href="https://www.imdb.com/title/tt0903747/" class="card"><img src="https://m.media-amazon.com/images/I/81WTkpSe7uS._AC_UY218_.jpg"><p>Breaking Bad</p></a>
+<a href="https://www.imdb.com/title/tt0944947/" class="card"><img src="https://m.media-amazon.com/images/I/91v+2sd0roL._AC_UL320_.jpg"><p>Game of Thrones</p></a>
+<a href="https://www.imdb.com/title/tt1475582/" class="card"><img src="https://m.media-amazon.com/images/I/61v2UjII5QL._AC_UY218_.jpg"><p>Sherlock</p></a>
+<a href="https://www.imdb.com/title/tt0108778/" class="card"><img src="https://m.media-amazon.com/images/I/810DBFSCvIL._AC_UY218_.jpg"><p>Friends</p></a>
+<a href="https://www.imdb.com/title/tt7366338/" class="card"><img src="https://m.media-amazon.com/images/I/812GkdLyNKL._AC_UY218_.jpg"><p>Chernobyl</p></a>
+<a href="https://www.imdb.com/title/tt0386676/" class="card"><img src="https://m.media-amazon.com/images/I/51JgpRE81lL._AC_UY218_.jpg"><p>The Office</p></a>
+<a href="https://www.imdb.com/title/tt2442560/" class="card"><img src="https://m.media-amazon.com/images/I/71OvnE2632L._AC_UY218_.jpg"><p>Peaky Blinders</p></a>
+<a href="https://www.imdb.com/title/tt4574334/" class="card"><img src="https://m.media-amazon.com/images/I/71V2TlksW0L._AC_UL320_.jpg"><p>Stranger Things</p></a>
+<a href="https://www.imdb.com/title/tt2861424/" class="card"><img src="https://m.media-amazon.com/images/I/91M69rnd9SL._AC_UY218_.jpg"><p>Rick and Morty</p></a>
+<a href="https://www.imdb.com/title/tt5180504/" class="card"><img src="https://m.media-amazon.com/images/I/81rcURiyM2L._AC_UL320_.jpg"><p>The Witcher</p></a>
+<a href="https://www.imdb.com/title/tt1856010/" class="card"><img src="https://m.media-amazon.com/images/I/81yOoqIRpOL._AC_UY218_.jpg"><p>House of Cards</p></a>
+<a href="https://www.imdb.com/title/tt0411008/" class="card"><img src="https://m.media-amazon.com/images/I/81foctaG0gL._AC_UY218_.jpg"><p>Lost</p></a>
+<a href="https://www.imdb.com/title/tt3032476/" class="card"><img src="https://m.media-amazon.com/images/I/A1JrXCiCEAL._AC_UY218_.jpg"><p>Better Call Saul</p></a>
+<a href="https://www.imdb.com/title/tt0773262/" class="card"><img src="https://m.media-amazon.com/images/I/810VZiMt9YL._AC_UY218_.jpg"><p>Dexter</p></a>
+<a href="https://www.imdb.com/title/tt0141842/" class="card"><img src="https://m.media-amazon.com/images/I/81n7WC7vPqL._AC_UY218_.jpg"><p>Sopranos</p></a>
+<a href="https://www.imdb.com/title/tt0096697/" class="card"><img src="https://m.media-amazon.com/images/I/915C7re1OZL._AC_UY218_.jpg"><p>Simpsons</p></a>
+<a href="https://www.imdb.com/title/tt2802850/" class="card"><img src="https://m.media-amazon.com/images/I/91j4oKjdc4L._AC_UY218_.jpg"><p>Fargo</p></a>
+<a href="https://www.imdb.com/title/tt8111088/" class="card"><img src="https://m.media-amazon.com/images/I/81Gdf7mEcfL._AC_UL320_.jpg"><p>Mandalorian</p></a>
+<a href="https://www.imdb.com/title/tt2707408/" class="card"><img src="https://m.media-amazon.com/images/I/51b7-V7hPEL._AC_UY218_.jpg"><p>Narcos</p></a>
+<a href="https://www.imdb.com/title/tt6468322/" class="card"><img src="https://m.media-amazon.com/images/I/81YN9GCaB7L._AC_UY218_.jpg"><p>Money Heist</p></a>
+</div>
+</section>
+<section id="dokumentarci">
+<div class="grid">
+<a href="https://www.imdb.com/title/tt0903747/" class="card"><img src="https://m.media-amazon.com/images/I/71CeO-FHQ-L._AC_UY218_.jpg"><p>Planet Earth</p></a>
+<a href="https://www.imdb.com/title/tt2395695/" class="card"><img src="https://m.media-amazon.com/images/I/916GmfmvbSL._AC_UY218_.jpg"><p>Cosmos</p></a>
+<a href="https://www.imdb.com/title/tt0944947/" class="card"><img src="https://m.media-amazon.com/images/I/81I6YA6CdUL._AC_UY218_.jpg"><p>Our Planet</p></a>
+<a href="https://www.imdb.com/title/tt0386676/" class="card"><img src="https://m.media-amazon.com/images/I/81m-x9aGiqL._AC_UY218_.jpg"><p>Making a Murderer</p></a>
+<a href="https://www.imdb.com/title/tt4574334/" class="card"><img src="https://m.media-amazon.com/images/I/81ycn-56xbL._AC_UY218_.jpg"><p>The Last Dance</p></a>
+<a href="https://www.imdb.com/title/tt7366338/" class="card"><img src="https://m.media-amazon.com/images/I/81uNLNBxALL._AC_UY218_.jpg"><p>Chernobyl Docs</p></a>
+<a href="https://www.imdb.com/title/tt8111088/" class="card"><img src="https://m.media-amazon.com/images/I/71iitYVHk+L._AC_UY218_.jpg"><p>Night on Earth</p></a>
+<a href="https://www.imdb.com/title/tt2802850/" class="card"><img src="https://m.media-amazon.com/images/I/716mt4GGf+L._AC_UY218_.jpg"><p>Inside Bill's Brain</p></a>
+<a href="https://www.imdb.com/title/tt2707408/" class="card"><img src="https://m.media-amazon.com/images/I/91Cro1JEWJL._AC_UY218_.jpg"><p>Dirty Money</p></a>
+<a href="https://www.imdb.com/title/tt6468322/" class="card"><img src="https://m.media-amazon.com/images/I/71DSPI9QpgL._AC_UY218_.jpg"><p>Explained</p></a>
+<a href="https://www.imdb.com/title/tt3032476/" class="card"><img src="https://m.media-amazon.com/images/I/414rtzmd0tL._AC_UY218_.jpg"><p>Wild Wild Country</p></a>
+<a href="https://www.imdb.com/title/tt1856010/" class="card"><img src="https://m.media-amazon.com/images/I/71qV4x9n40L._AC_UY218_.jpg"><p>Free Solo</p></a>
+<a href="https://www.imdb.com/title/tt0411008/" class="card"><img src="https://m.media-amazon.com/images/I/61KV3zdpelS._AC_UY218_.jpg"><p>The Social Dilemma</p></a>
+<a href="https://www.imdb.com/title/tt0773262/" class="card"><img src="https://m.media-amazon.com/images/I/A1sDhk+-saL._AC_UY218_.jpg"><p>Blackfish</p></a>
+<a href="https://www.imdb.com/title/tt0141842/" class="card"><img src="https://m.media-amazon.com/images/I/61zNqiP-DFL._AC_UY218_.jpg"><p>Food Inc</p></a>
+<a href="https://www.imdb.com/title/tt0096697/" class="card"><img src="https://m.media-amazon.com/images/I/91-5VGQsc7L._AC_UY218_.jpg"><p>March of Penguins</p></a>
+<a href="https://www.imdb.com/title/tt2802850/" class="card"><img src="https://m.media-amazon.com/images/I/71Qd-bFIrCL._AC_UY218_.jpg"><p>Jiro Dreams</p></a>
+<a href="https://www.imdb.com/title/tt8111088/" class="card"><img src="https://m.media-amazon.com/images/I/81LEv5xVGWL._AC_UY218_.jpg"><p>The Last Czars</p></a>
+<a href="https://www.imdb.com/title/tt2707408/" class="card"><img src="https://m.media-amazon.com/images/I/81MyGt--nyL._AC_UY218_.jpg"><p>Roman Empire</p></a>
+<a href="https://www.imdb.com/title/tt6468322/" class="card"><img src="https://m.media-amazon.com/images/I/81LGqS-D1-L._AC_UY218_.jpg"><p>Abstract</p></a>
+</div>
+</section>
+</body>
+</html>
