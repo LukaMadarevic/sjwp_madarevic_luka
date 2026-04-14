@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+.header {
+  background: orange;
+  height: 60px;
+}
+.nav {
+  background: gold;
+  height: 50px;
+}
+.hero {
+  background: #d4ff00;
+  height: 120px;
+}
+.content {
+  display: grid;
+  gap: 10px;
+}
+.box {
+  background: steelblue;
+  height: 60px;
+}
+.footer {
+  display: grid;
+  gap: 10px;
+}
+.foot-box {
+  background: lightgray;
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .box {
+    height: 50px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    height: 150px;
+  }
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header class="header"></header>
+  <nav class="nav"></nav>
+  <section class="hero"></section>
+  <section class="content">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </section>
+  <footer class="footer">
+    <div class="foot-box"></div>
+    <div class="foot-box"></div>
+    <div class="foot-box"></div>
+    <div class="foot-box"></div>
+  </footer>
+</div>
+</body>
+</html>
+</body>
+</html>

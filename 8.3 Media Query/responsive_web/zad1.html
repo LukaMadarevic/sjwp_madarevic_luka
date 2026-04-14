@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Grid</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  height: 100vh;
+}
+.container {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 25vh);
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50vh);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100vh;
+  }
+  .box {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.box1 { background: #f26c6c; }
+.box2 { background: #f29c50; }
+.box3 { background: #e5c85b; }
+.box4 { background: #b6d96c; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="box box1">1</div>
+  <div class="box box2">2</div>
+  <div class="box box3">3</div>
+  <div class="box box4">4</div>
+</div>
+</body>
+</html>
