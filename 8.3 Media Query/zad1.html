@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Media Query Grid</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Osnovni stil */
+.header { background: #0d1b2a; color: white; }
+.menu   { background: #e63946; color: white; }
+.hero   { background: #4f81bd; color: white; }
+.main   { background: #1b263b; color: white; }
+.banner { background: #e9c46a; }
+.extra  { background: #52b788; }
+.image  { background: #a8dadc; }
+
+.container > div {
+  padding: 20px;
+  text-align: center;
+}
+
+/* MOBILE (default) */
+.container {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "menu"
+    "hero"
+    "main"
+    "banner"
+    "extra"
+    "image";
+}
+
+.header { grid-area: header; }
+.menu   { grid-area: menu; }
+.hero   { grid-area: hero; }
+.main   { grid-area: main; }
+.banner { grid-area: banner; }
+.extra  { grid-area: extra; }
+.image  { grid-area: image; }
+
+/* TABLET */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 150px 1fr;
+    grid-template-areas:
+      "header header"
+      "menu hero"
+      "menu main"
+      "menu banner"
+      "extra image";
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header menu menu"
+      "hero hero hero"
+      "main . image"
+      "main . extra"
+      "banner banner banner";
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="header">HEADER</div>
+  <div class="menu">MENU</div>
+  <div class="hero">HERO</div>
+  <div class="main">MAIN</div>
+  <div class="banner">BANNER</div>
+  <div class="extra">EXTRA</div>
+  <div class="image">IMAGE</div>
+</div>
+
+</body>
+</html>
