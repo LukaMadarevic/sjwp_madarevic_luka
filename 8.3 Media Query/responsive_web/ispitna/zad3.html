@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.img {
+  background: teal;
+  height: 100px;
+  border-radius: 10px;
+}
+@media (max-width: 1023px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<div class="gallery">
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+  <div class="img"></div>
+</div>
+</body>
+</html>
