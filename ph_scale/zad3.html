@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Animirani krug</title>
+    <style>
+        .krug {
+            width: 100px;
+            height: 100px;
+            background-color: dodgerblue;
+            border-radius: 50%;
+            animation: pomicanje 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes pomicanje {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="krug"></div>
+
+</body>
+</html>
